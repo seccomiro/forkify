@@ -35,7 +35,6 @@ const controlSearch = async () => {
       await state.search.getResults();
   
       // 5. render results on UI
-      // console.log(state.search.result);
       clearLoader();
       searchView.renderResults(state.search.result);
     } catch (error) {
@@ -79,8 +78,6 @@ const controlRecipe = async () => {
       await state.recipe.getRecipe();
       state.recipe.calcTime();
       state.recipe.calcServings();
-
-      // console.log(state.recipe);
 
       clearLoader();
       recipeView.renderRecipe(
@@ -193,9 +190,4 @@ elements.recipe.addEventListener('click', e => {
     // Like controller
     controlLike();
   }
-  
-  // console.log(state.recipe);
 });
-
-// window.l = new List();
-// window.state = state;
