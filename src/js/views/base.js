@@ -9,7 +9,9 @@ export const elements = {
   searchResult: el('.results'),
   searchResPages: el('.results__pages'),
   recipe: el('.recipe'),
-  shopping: el('.shopping__list')
+  shopping: el('.shopping__list'),
+  likesMenu: el('.likes__field'),
+  likesList: el('.likes__list')
 };
 
 export const elementStrings = {
